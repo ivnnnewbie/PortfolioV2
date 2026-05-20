@@ -117,40 +117,26 @@ export default function Home() {
               disableHover
             >
               <p className="text-sm text-muted leading-relaxed">
-                I’m <strong>Rhen-Rhen A. Lumbo</strong>, a BSIT student focused
-                on helping small businesses and individuals build a strong and
-                professional online presence through clean, modern, and
-                user-friendly websites.
+                Hi, I’m <strong>Daverick Ivan B. Tenorio</strong>, I help small businesses
+                and individuals establish a strong digital presence by creating intuitive
+                and cohesive visual branding, turning concepts into functional and
+                visually striking digital realities. 
+
               </p>
 
               <p className="text-sm text-muted leading-relaxed mt-4">
-                I create websites that clearly communicate what a business
-                offers—whether it’s services, products, bookings, or
-                portfolios—so visitors can easily understand, trust, and take
-                action. My approach prioritizes clarity, structure, and
-                simplicity over unnecessary complexity.
+                I turn products and services into clear visual experiences through strategic
+                wireframing, logo design, and digital graphics. No unnecessary 
+                complexity—just purposeful design that builds trust and drives action.
               </p>
 
               <p className="text-sm text-muted leading-relaxed mt-4">
-                Every website I build is designed to be fast, responsive, and
-                organized. I focus on making sure the layout feels natural, the
-                content is easy to read, and the overall experience works
-                smoothly across all devices.
-              </p>
-
-              <p className="text-sm text-muted leading-relaxed mt-4">
-                As I continue growing in the field of web development, I aim to
-                not only improve how websites look—but how they function,
+                As I continue to grow in the field of designing, I aim to
+                not only improve how my outputs look—but how they function,
                 support business goals, and create real value for the people who
                 use them.
               </p>
 
-              <ul className="mt-4 space-y-2 text-sm text-muted leading-relaxed">
-                <li>• Professional business & portfolio websites</li>
-                <li>• Landing pages for services and promotions</li>
-                <li>• Website redesign & layout improvement</li>
-                <li>• Clean and simple contact & inquiry systems</li>
-              </ul>
             </AnimatedCard>
 
             {/* FOCUS */}
@@ -161,17 +147,19 @@ export default function Home() {
               disableHover
             >
               <p className="text-sm text-muted leading-relaxed">
-                Right now, I’m focused on improving how websites look and feel.
-                I work on making layouts clean, responsive on all devices, and
-                easy to use so visitors can navigate smoothly and enjoy the
-                experience.
+                For me, design is where context meets creativity. I am constantly 
+                refining my skills in UI and graphic design, focusing on how deeply
+                an idea integrates into the visual layout. My goal is simple:
+                to ensure every project is not just visually stunning, but
+                purposefully driven by its core concept.
               </p>
 
               <p className="text-sm text-muted leading-relaxed mt-3">
-                I’m also learning how websites work behind the scenes so I can
-                build complete solutions — not just good-looking pages, but
-                systems that function properly and help businesses serve their
-                customers better.
+                Beyond mastering design principles, I treat my technical toolkit as
+                a living project. I am highly adaptable and always eager to acquire 
+                new technical skills—whether that means picking up a new design tool,
+                diving into emerging software, or learning frontend technologies—to 
+                better bring my creative visions to life.
               </p>
             </AnimatedCard>
           </div>
@@ -192,9 +180,9 @@ export default function Home() {
 
                 <div className="space-y-2">
                   <EducationStep
-                    title="Laguna State Polytechnic University - San Pablo City Campus"
-                    subtitle="Bachelor of Science in Information Technology (BSIT)"
-                    years="2024 — Present"
+                    title="University of Antique - Tario Lim Memorial Campus"
+                    subtitle="Bachelor of Science in Information Technology"
+                    years="2022 — Present"
                     status="In Progress"
                     current
                   >
@@ -202,27 +190,18 @@ export default function Home() {
                   </EducationStep>
 
                   <EducationStep
-                    title="Crecencia Drusila Lopez Senior High School"
-                    subtitle="TVL – Programming Strand"
-                    years="2022 — 2024"
+                    title="Pandan National Vocational High School"
+                    subtitle="Humanities and Social Sciences Strand"
+                    years="2016 — 2022"
                     status="Graduate"
                   >
-                    Senior High School
+                    Junior & Senior High School
                   </EducationStep>
 
                   <EducationStep
-                    title="Prudencia D. Fule Memorial National High School"
+                    title="Fragante Elementary School"
                     subtitle="Completed"
-                    years="2018 — 2022"
-                    status="Graduate"
-                  >
-                    Junior High School
-                  </EducationStep>
-
-                  <EducationStep
-                    title="Prudencia D. Fule Memorial Elementary School"
-                    subtitle="Completed"
-                    years="2012 — 2018"
+                    years="2009 — 2016"
                     status="Graduate"
                   >
                     Elementary

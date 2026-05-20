@@ -1,30 +1,30 @@
 import { motion } from "framer-motion";
-import { Search, PenTool, Code, Rocket } from "lucide-react";
+import { NotepadText, Sparkles, Brush, Rocket } from "lucide-react";
 
 const steps = [
   {
     step: "01",
     title: "Understand Your Needs",
-    icon: Search,
-    desc: "We talk about your goals, your customers, and what you want the website to achieve (more inquiries, bookings, or sales).",
+    icon: NotepadText,
+    desc: "We talk about your goals, target audience, and design preferences to make sure we're on the same page before starting the project.",
   },
   {
     step: "02",
-    title: "Plan & Design the Layout",
-    icon: PenTool,
-    desc: "I create a clear page structure and design that looks professional and guides visitors toward your main action (message, call, or book).",
+    title: "Brainstorm & Conceptualize",
+    icon: Sparkles,
+    desc: "I gather ideas and references to create a visual direction that aligns with your brand and objectives.",
   },
   {
     step: "03",
-    title: "Build & Connect Everything",
-    icon: Code,
-    desc: "I develop the website so it works smoothly on mobile and desktop — and if needed, I connect forms or booking features so customers can take action easily.",
+    title: "Design",
+    icon: Brush,
+    desc: "I create wireframes, mockups, and prototypes to visualize the design and layout of your digital product.",
   },
   {
     step: "04",
-    title: "Test & Launch",
+    title: "Testing",
     icon: Rocket,
-    desc: "I check everything before going live (speed, responsiveness, and usability), then launch the website and make final refinements.",
+    desc: "I test the product through user's perspective to ensure that its intuitive and user-friendly.",
   },
 ];
 

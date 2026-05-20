@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
-import { Layout, Monitor, CalendarCheck } from "lucide-react";
+import { Component, PencilRuler, Newspaper } from "lucide-react";
 
 const services = [
   {
-    title: "Website Design & Development",
+    title: "Logo & Brand Identity Design",
     description:
-      "Modern, mobile-friendly websites designed to build trust and clearly present your brand. Clean layouts, smooth navigation, and a professional look that helps visitors take action.",
-    icon: Layout,
+      "Create a memorable brand identity with a custom logo and visual elements that represent your business values and resonate with your target audience.",
+    icon: Component,
   },
   {
-    title: "High-Converting Landing Pages",
+    title: "User Interface (UI) Design",
     description:
-      "Focused landing pages built to promote a product, service, or campaign. Clear messaging, strong call-to-action, and structured sections that guide visitors toward booking or contacting you.",
-    icon: Monitor,
+      "Create intuitive and visually appealing user interfaces for web and mobile applications, ensuring a seamless experience for your users.",
+    icon: PencilRuler,
   },
   {
-    title: "Full Booking System Website",
+    title: "Publication Material Design",
     description:
-      "Complete booking websites where customers can check availability, reserve online, and receive confirmations automatically — helping you save time and manage appointments efficiently.",
-    icon: CalendarCheck,
+      "Design compelling publication materials such as brochures, flyers, and newsletters that effectively communicate your message and engage your audience.",
+    icon: Newspaper,
   },
 ];
 
@@ -29,9 +29,7 @@ export default function Services() {
       <div className="text-center max-w-2xl mx-auto">
         <h2 className="text-xl font-extrabold text-head">SERVICES</h2>
         <p className="text-sm text-muted mt-2 leading-relaxed">
-          I focus on building websites that don’t just look good — they help
-          businesses attract customers, build credibility, and operate more
-          efficiently online.
+          What I can do for you: I offer a range of design services to help you establish a strong digital presence and create visually stunning experiences for your audience.
         </p>
       </div>
 

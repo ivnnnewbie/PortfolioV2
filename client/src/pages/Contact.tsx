@@ -11,6 +11,8 @@ import {
   Mail,
   MessageSquare,
   User,
+  Facebook, // Added
+  Instagram, // Added
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { API_BASE } from "../config";
@@ -240,10 +242,10 @@ export default function Contact() {
       </button>
 
       <header className="contact-header">
-        <h1>Let’s Work Together</h1>
+        <h1>Let’s Collaborate</h1>
         <p>
-          Have a project in mind or need a professional website? Send a message
-          or connect with me through my socials.
+          Got a concept in your mind? Get in touch with me and let's transform
+          it into reality.
         </p>
       </header>
 
@@ -315,7 +317,7 @@ export default function Contact() {
           >
             <div className="contact-cardTitle">
               <Mail size={18} />
-              <span>Connect With Me</span>
+              <span>Contact Me</span>
             </div>
 
             <a
@@ -323,27 +325,27 @@ export default function Contact() {
               href="mailto:lumborhenrhena@gmail.com"
             >
               <Mail size={18} />
-              <span>lumborhenrhena@gmail.com</span>
+              <span>daverickivant@gmail.com</span>
             </a>
 
             <a
               className="contact-linkRow"
-              href="https://linkedin.com/in/yourprofile"
+              href="linkedin.com/in/dibtenorio"
               target="_blank"
               rel="noreferrer"
             >
               <Linkedin size={18} />
-              <span>linkedin.com/in/yourprofile</span>
+              <span>linkedin.com/in/dibtenorio</span>
             </a>
 
             <a
               className="contact-linkRow"
-              href="https://github.com/wakairrl"
+              href="https://github.com/ivnnnewbie"
               target="_blank"
               rel="noreferrer"
             >
               <Github size={18} />
-              <span>github.com/wakairrl</span>
+              <span>github.com/ivnnnewbie</span>
             </a>
           </motion.div>
         </div>
@@ -567,22 +569,39 @@ export default function Contact() {
               Calendar / booking system.
             </div>
           </motion.div>
-
-          <motion.div
+          
+         <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.12 }}
             className="contact-card"
           >
             <div className="contact-cardTitle">
-              <Mail size={18} />
-              <span>Connect With Me</span>
+              <MessageSquare size={18} />
+              <span>Social Links</span>
             </div>
 
-            <div className="contact-linkRow contact-linkRowStatic">
-              <Mail size={18} />
-              <span>lumborhenrhena@gmail.com</span>
-            </div>
+            {/* Facebook Link */}
+            <a
+              className="contact-linkRow"
+              href="https://www.facebook.com/ivvvnnn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Facebook size={18} />
+              <span>Facebook Account</span>
+            </a>
+
+            {/* Instagram Link */}
+            <a
+              className="contact-linkRow"
+              href="https://instagram.com/the.ivnnn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Instagram size={18} />
+              <span>Instagram Account</span>
+            </a>
           </motion.div>
         </div>
       </section>
