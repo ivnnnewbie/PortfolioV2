@@ -21,10 +21,9 @@ export type Booking = {
 
 // ✅ Added Programming Languages category
 export type TechCategory =
-  | "Frontend"
-  | "Backend"
-  | "Tools"
-  | "Programming Languages";
+  | "Design"
+  | "Code"
+  | "Office";
 
 export type TechItem = {
   title: string;
@@ -118,115 +117,180 @@ export const booking: Booking[] = [
 
 // ================= TECH STACK =================
 export const techStack: TechItem[] = [
-  // -------- Frontend --------
+  // -------- Design --------
+  {
+    title: "Canva",
+    description: "Making quick marketing graphics and social media posts",
+    logo: "/icons/Canva.png",
+    category: "Design",
+  },
+  {
+    title: "Affinity",
+    description: "Creating crisp graphics, logos, and digital art.",
+    logo: "/icons/Affinity.png",
+    category: "Design",
+  },
+  {
+    title: "Figma",
+    description: "Designing user interfaces and interactive app previews.",
+    logo: "/icons/Figma.png",
+    category: "Design",
+  },
+  {
+    title: "Adobe XD",
+    description: "Planning and designing digital screen experiences.",
+    logo: "/icons/AdobeXD.png",
+    category: "Design",
+  },
+
+  // -------- Code --------
+  {
+    title: "VS Code",
+    description: "Writing clean code for websites and web apps.",
+    logo: "/icons/VScode.png",
+    category: "Code",
+  },
+  {
+    title: "Android Studio",
+    description: "Building and testing mobile apps for Android.",
+    logo: "/icons/androidstudio.png",
+    category: "Code",
+  },
   {
     title: "HTML",
     description: "Semantic structure for accessible layouts.",
     logo: "/icons/html.png",
-    category: "Frontend",
+    category: "Code",
   },
   {
     title: "CSS",
-    description: "Responsive styling and layout systems.",
+    description: "Styling and layout for web pages.",
     logo: "/icons/css-3.png",
-    category: "Frontend",
-  },
-  {
-    title: "JavaScript",
-    description: "Core scripting language for web interactivity.",
-    logo: "/icons/js.png",
-    category: "Frontend",
-  },
-  {
-    title: "React",
-    description: "Component-based UI development.",
-    logo: "/icons/atom.png",
-    category: "Frontend",
-  },
-  {
-    title: "TypeScript",
-    description: "Typed JavaScript for scalable applications.",
-    logo: "/icons/typescript.png",
-    category: "Frontend",
-  },
-  {
-    title: "Tailwind CSS",
-    description: "Utility-first CSS framework.",
-    logo: "/logos/tailwindcss.svg",
-    category: "Frontend",
-  },
-
-  // -------- Backend --------
-  {
-    title: "Node.js",
-    description: "JavaScript runtime for backend services.",
-    logo: "/icons/node.png",
-    category: "Backend",
-  },
-
-    {
-    title: "Php",
-    description: "Server-side scripting language for web development.",
-    logo: "/icons/php.png",
-    category: "Programming Languages",
-  },
-  {
-    title: "MySQL",
-    description: "Relational database management system.",
-    logo: "/icons/mysql.png",
-    category: "Backend",
-  },
-  // -------- Tools --------
-  {
-    title: "Vite",
-    description: "Fast development build tool.",
-    logo: "/logos/vite.svg",
-    category: "Tools",
+    category: "Code",
   },
   {
     title: "Git",
     description: "Version control system.",
-    logo: "/icons/social.png",
-    category: "Tools",
+    logo: "/icons/socials.png",
+    category: "Code",
   },
   {
     title: "GitHub",
     description: "Code hosting and collaboration platform.",
     logo: "/icons/github.png",
-    category: "Tools",
-  },
-
-  // -------- Programming Languages --------
-  {
-    title: "C#",
-    description: "Object-oriented programming language for applications and systems.",
-    logo: "/icons/csharp.png",
-    category: "Programming Languages",
+    category: "Code",
   },
   {
-    title: "Java",
-    description: "Widely-used programming language for backend and software development.",
-    logo: "/icons/java.png",
-    category: "Programming Languages",
+    title: "MySQL",
+    description: "Storing and organizing website data safely.",
+    logo: "/icons/mysql.png",
+    category: "Code",
   },
 
+  // -------- Office --------
+  {
+    title: "Google Docs",
+    description: "Writing and sharing project notes and text content",
+    logo: "/icons/Googledocs.png",
+    category: "Office",
+  },
+  {
+    title: "Google Sheets",
+    description: "Organizing project data and website lists.",
+    logo: "/icons/GoogleSheets.png",
+    category: "Office",
+  },
+  {
+    title: "Google Sites",
+    description: "Setting up quick web pages for internal feedback.",
+    logo: "/icons/GoogleSites.png",
+    category: "Office",
+  },
+  {
+    title: "MS Word",
+    description: "Writing formal project proposals and documents.",
+    logo: "/icons/MSword.png",
+    category: "Office",
+  },
 ];
 
 // ================= CERTIFICATES =================
 export const certificates: Certificate[] = [
   {
     id: 1,
-    title: "Data Analytics",
-    issuer: "Cisco Networking Academy",
-    date: "2025",
-    image: "/certificates/DataAnalytics.png",
+    title: "Certificate of Appearance in CHED RAISE 2026",
+    issuer: "Commission on Higher Education",
+    date: "2026",
+    image: "/certificates/ched.png",
   },
   {
     id: 2,
-    title: "Web Development Fundamentals",
+    title: "Certificate of Participation in CHED RAISE 2026",
+    issuer: "Commission on Higher Education",
+    date: "2026",
+    image: "/certificates/ched2.png",
+  },
+  {
+    id: 3,
+    title: "Statement of Achievement",
+    issuer: "Cisco Networking Academy",
+    date: "2026",
+    image: "/certificates/cisco.png",
+  },
+  {
+    id: 4,
+    title: "HTML Essentials",
+    issuer: "Cisco Networking Academy",
+    date: "2026",
+    image: "/certificates/cisco1.png",
+  },
+  {
+    id: 5,
+    title: "Introduction to AI",
     issuer: "IBM SkillsBuild",
     date: "2026",
-    image: "/certificates/WebDev.png",
+    image: "/certificates/IBM2.png",
   },
-
+  {
+    id: 6,
+    title: "AI Forms and Functions",
+    issuer: "IBM SkillsBuild",
+    date: "2026",
+    image: "/certificates/IBM3.png",
+  },
+  {
+    id: 7,
+    title: "Machine Learning",
+    issuer: "IBM SkillsBuild",
+    date: "2026",
+    image: "/certificates/IBM4.png",
+  },
+  {
+    id: 8,
+    title: "Neural Networks and Deep Learning",
+    issuer: "IBM SkillsBuild",
+    date: "2026",
+    image: "/certificates/IBM5.png",
+  },
+  {
+    id: 9,
+    title: "Intelligence Behind AI",
+    issuer: "IBM SkillsBuild",
+    date: "2026",
+    image: "/certificates/IBM6.png",
+  },
+  {
+    id: 10,
+    title: "Certificate of Participation",
+    issuer: "University of Antique-TLMC",
+    date: "2026",
+    image: "/certificates/ua2.png",
+  },
+  {
+    id: 11,
+    title: "Certificate of Recognition in Editorial Writing",
+    issuer: "The SeaBreeze Publication",
+    date: "2023",
+    image: "/certificates/ua1.png",
+  },
 ];
