@@ -1,51 +1,62 @@
 export const portfolioContext = {
-  owner: "Rhen-Rhen Lumbo",
+  owner: "Daverick Ivan Tenorio",
   pronouns:"He/Him",
 
   contact: {
-    email: "lumborhenrhena@gmail.com",
-    phone: "09612961879",
+    email: "daverickivant@gmail.com",
+    phone: "09380120661",
     contactPage:"/contact",
   },
     personal:{
-        lifeVerse:"Deuteronomy 31:8 The LORD himself goes before you and will be with you; He will never leave you nor forsake you. Do not be afraid; do not be discouraged."
+        lifeVerse:"Que sera, sera. Whatever will be, will be.",
     },
 
   availability: {
-    status: "Open to internships and freelance projects",
-    focus: ["Frontend development", "Portfolio/Landing pages", "Small business websites"],
-    location: "Philippines San Pablo City, Laguna",
+    status: "Open for work",
+    focus: ["Frontend development", "UI/UX Design", "Graphic Design"],
+    location: "Philippines Fragante, Pandan, Antique",
     contactHint: "Use the Contact section on the portfolio to reach out.",
   },
 
   techStack: {
-    Frontend: [
+    Design: [
+      "Canva",
+      "Affinity",
+      "Figma",
+      "AdobeXD",
+    ],
+    Code: [
+      "VS Code", 
+      "Android Studio",
       "HTML",
       "CSS",
-      "JavaScript",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
+      "Git",
+      "GitHub",
+      "MySQL",
+      "Vercel (learning)",
     ],
-    Tools: ["Git", "GitHub", "Vite", "Vercel"],
-    Backend: ["Node.js (learning)", "Express (learning)"],
+    Office: [
+      "Google Docs",
+      "Google Sheets",
+      "Google Sites",
+      "Microsoft Word",
+    ],
   },
 
   projects: [
     {
-      name: "Photographer Portfolio Website",
+      name: "Mobile Thrift Shop UI",
       description:
-        "A clean and elegant photography portfolio website focused on creative showcase and personal branding.",
-      tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      live: "https://photographer-portfolio-jet-three.vercel.app",
+        "A mobile thrift shop UI design with a clean and modern interface, focusing on user-friendly navigation and product presentation.",
+      tech: ["Canva"],
+      live: "https://canva.link/2m8wkbxuuoi1i8m",
     },
     {
-      name: "SmileCare Booking App",
+      name: "Magazine Layout Design",
       description:
-        "A modern dental clinic website with professional UI and clear consultation booking flow.",
-      tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite", "Vercel"],
-      live: "https://smilecarebookingapp.vercel.app",
+        "A magazine layout design that combines visual storytelling with a clean and organized structure, enhancing readability and engagement.",
+      tech: ["Canva"],
+      live: "https://canva.link/65saukau8lvx91o",
     },
   ],
 };
