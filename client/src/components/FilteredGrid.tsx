@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Github, ExternalLink, Eye, ArrowLeft } from "lucide-react";
 import { useMemo, useState } from "react";
 
