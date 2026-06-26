@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, Github, ExternalLink, Eye, ArrowLeft } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink, Eye, ArrowLeft } from "lucide-react";
 import { useMemo, useState } from "react";
 
 import { projects, certificates, techStack } from "../data/projects";
