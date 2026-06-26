@@ -257,11 +257,7 @@ export default function FilteredGrid({ active }: { active: FilterType }) {
                             <ExternalLink size={16} /> Live
                           </a>
                         )}
-                        {project.githubUrl && (
-                          <a href={project.githubUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm font-medium text-black-600 dark:hover:text-white transition-colors">
-                            <Github size={16} /> Code
-                          </a>
-                        )}
+                      
                       </div>
                     </div>
                   </motion.div>

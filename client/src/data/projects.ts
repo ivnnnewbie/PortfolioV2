@@ -5,8 +5,6 @@ export type Project = {
   description: string;
   thumbnail: string;
   liveUrl?: string;
-  githubUrl?: string;
-  techStack: string[];
 };
 
 export type Booking = {
@@ -44,61 +42,19 @@ export type Certificate = {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Photographer Portfolio Website",
+    title: "Mobile Thrift Shop UI",
     description:
-      "A clean and elegant photography portfolio website designed to showcase creative works and services with a modern responsive layout.",
-    thumbnail: "/projects/photographer-portfolio.png",
-    liveUrl: "https://photographer-portfolio-jet-three.vercel.app",
-    githubUrl: "https://github.com/rrlWakai/photographer-portfolio",
-    techStack: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "A mobile thrift shop UI design with a clean and modern interface, focusing on user-friendly navigation and product presentation.",
+    thumbnail: "/projects/Thriftshop_UI.jpg",
+    liveUrl: "https://canva.link/2m8wkbxuuoi1i8m",
   },
   {
     id: 2,
-    title: "SmileCare Booking App",
+    title: "Magazine Layout Design",
     description:
-      "A modern dental clinic website with responsive UI and structured consultation booking flow.",
-    thumbnail: "/projects/smilecare.png",
-    liveUrl: "https://smilecarebookingapp.vercel.app/",
-    githubUrl: "https://github.com/rrlWakai/dental-appointment-app",
-    techStack: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Vite",
-    ],
-  },
-  {
-    id: 3,
-    title: "Saling Cafe",
-    description:
-      "A warm and welcoming café website designed to showcase menu and brand story while working smoothly across devices.",
-    thumbnail: "/projects/SalingCafe.png",
-    liveUrl: "https://sailingcafe.vercel.app/",
-    githubUrl: "https://github.com/rrlWakai/CoffeWebsite.git",
-    techStack: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Vite",
-    ],
-  },
-  {
-    id: 4,
-    title: "Timeless Resort",
-    description:
-      "A luxury resort landing page with smooth animations and structured sections guiding users toward booking and inquiries.",
-    thumbnail: "/projects/timelessresort.png",
-    liveUrl: "https://timelessresort.vercel.app/",
-    githubUrl: "https://github.com/rrlWakai/TimelessProject.git",
-    techStack: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Vite",
-    ],
+      "A magazine layout design that combines visual storytelling with a clean and organized structure, enhancing readability and engagement.",
+    thumbnail: "/projects/Magazinelayout.png",
+    liveUrl: "https://canva.link/65saukau8lvx91o",
   },
 ];
 
