@@ -12,11 +12,33 @@ const portfolioContext = {
     phone: "09380120661",
     contactPage: "/contact",
   },
+  education: {
+    primaryeducation: {
+      name: "Fragante Elementary School",
+      awards: "Academic Excellence Awardee for 7 consecutive years",
+    },
+    secondaryeducation: {
+      name: "Pandan National Vocational High School",
+      strand: "Humanities and Social Sciences",
+      awards: "Academic Excellence Awardee for 6 consecutive years",
+    },
+    tertiaryeducation: {
+      name: "University of Antique - Tario Lim Memorial Campus",
+      program: "Bachelor of Science in Information Technology",
+      major: "Human-Computer Interaction",
+      awards: "Deans Lister for 7 consecutive semesters, Cum Laude",
+    },
+  },
   personal: {
-    lifeVerse: "Que sera, sera. Whatever will be, will be.",
+    favouritequote: "Que sera, sera. Whatever will be, will be.",
+    zodiacsign: "Virgo",
+    politicalview: "Pro Philippine Democracy, Pro People, Pro Environment",
+    hobbies: ["Gaming", "Reading", "Music", "Dancing"],
+    favoritecolor: "Green, not neon green though",
+    favoriteartist:"Ariana Grande",
   },
   availability: {
-    status: "Open for work",
+    status: "Actively looking for employment opportunities",
     focus: ["Frontend development", "UI/UX Design", "Graphic Design"],
     location: "Philippines Fragante, Pandan, Antique",
     contactHint: "Use the Contact section on the portfolio to reach out.",

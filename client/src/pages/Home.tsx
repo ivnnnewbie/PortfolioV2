@@ -17,6 +17,7 @@ import LocalTimeCard from "../components/LocalTimeCard";
 function EducationStep({
   title,
   subtitle,
+  awards,
   years,
   status,
   current = false,
@@ -24,6 +25,7 @@ function EducationStep({
 }: {
   title: string;
   subtitle?: string;
+  awards?: string;
   years: string;
   status: string;
   current?: boolean;
@@ -65,7 +67,14 @@ function EducationStep({
               <span className="edu-sub text-xs leading-tight">{subtitle}</span>
             )}
 
-            <span className="edu-sep">•</span>
+            {awards && (
+              <>
+                <span className="edu-sep">•</span>
+                <span className="edu-awards text-xs font-semibold">
+                  {awards}
+                </span>
+              </>
+            )}
 
             <span className="edu-sub text-xs font-semibold whitespace-nowrap">
               {years}
@@ -182,9 +191,9 @@ export default function Home() {
                   <EducationStep
                     title="University of Antique - Tario Lim Memorial Campus"
                     subtitle="Bachelor of Science in Information Technology"
-                    years="2022 — Present"
-                    status="In Progress"
-                    current
+                    awards="Cum Laude"
+                    years="2022 — 2026"
+                    status="Graduate"
                   >
                     College
                   </EducationStep>
@@ -192,6 +201,7 @@ export default function Home() {
                   <EducationStep
                     title="Pandan National Vocational High School"
                     subtitle="Humanities and Social Sciences Strand"
+                    awards="Academic Excellence Awardee"
                     years="2016 — 2022"
                     status="Graduate"
                   >
@@ -200,7 +210,7 @@ export default function Home() {
 
                   <EducationStep
                     title="Fragante Elementary School"
-                    subtitle="Completed"
+                    subtitle=""
                     years="2009 — 2016"
                     status="Graduate"
                   >
