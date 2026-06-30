@@ -8,7 +8,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import { Bot, Send, X, Trash2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { API_BASE } from "../config";
+//import { API_BASE } from "../config";
 
 type Role = "user" | "assistant";
 
@@ -134,12 +134,13 @@ export default function ChatWidget() {
     setLoading(true);
     setMessages((prev) => [...prev, { role: "user", text }]);
 
-    try {
-      const res = await fetch(`${API_BASE}/api/chat`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: text, history }),
-      });
+   try {
+  // Replace the placeholder with your actual live Vercel link
+  const res = await fetch("https://portfolio-v2-32hxu6ncx-ivnnnewbies-projects.vercel.app/api/chat", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ message: text, history }),
+  });
 
       const raw = await res.text();
       let data: ChatApiResponse;

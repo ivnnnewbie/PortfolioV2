@@ -1,14 +1,65 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { GoogleGenAI } from "@google/genai";
-import { portfolioContext } from "../../shared/portfolioContext"; 
-// ⬆ adjust path if needed
 
 const MODEL = "gemini-2.5-flash";
+
+// Inlined context to ensure 100% reliable bundling on Vercel Serverless Functions
+const portfolioContext = {
+  owner: "Daverick Ivan Tenorio",
+  pronouns: "He/Him",
+  contact: {
+    email: "daverickivant@gmail.com",
+    phone: "09380120661",
+    contactPage: "/contact",
+  },
+  personal: {
+    lifeVerse: "Que sera, sera. Whatever will be, will be.",
+  },
+  availability: {
+    status: "Open for work",
+    focus: ["Frontend development", "UI/UX Design", "Graphic Design"],
+    location: "Philippines Fragante, Pandan, Antique",
+    contactHint: "Use the Contact section on the portfolio to reach out.",
+  },
+  techStack: {
+    Design: ["Canva", "Affinity", "Figma", "AdobeXD"],
+    Code: ["VS Code", "Android Studio", "HTML", "CSS", "Git", "GitHub", "MySQL", "Vercel"],
+    Office: ["Google Docs", "Google Sheets", "Google Sites", "Microsoft Word"],
+  },
+  projects: [
+    {
+      name: "Mobile Thrift Shop UI",
+      description: "A mobile thrift shop UI design with a clean and modern interface, focusing on user-friendly navigation and product presentation.",
+      tech: ["Canva"],
+      live: "https://canva.link/2m8wkbxuuoi1i8m",
+    },
+    {
+      name: "Magazine Layout Design",
+      description: "A magazine layout design that combines visual storytelling with a clean and organized structure, enhancing readability and engagement.",
+      tech: ["Canva"],
+      live: "https://canva.link/65saukau8lvx91o",
+    },
+  ],
+};
 
 export default async function handler(
   req: VercelRequest,
   res: VercelResponse
 ) {
+  // 1. Add CORS Headers to allow your localhost browser to talk to Vercel
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader("Access-Control-Allow-Origin", "*"); // Allows localhost access
+  res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS,PATCH,DELETE,POST,PUT");
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+  );
+
+  // Handle the browser's automatic security preflight (OPTIONS method)
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+
   // Allow only POST
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
@@ -39,7 +90,8 @@ export default async function handler(
       model: MODEL,
       contents,
       config: {
-        systemInstruction: `You are ${portfolioContext.owner}'s portfolio assistant.`,
+        // We pass the stringified portfolio structure directly into the system instruction
+        systemInstruction: `You are ${portfolioContext.owner}'s portfolio assistant. Use this data to answer questions accurately: ${JSON.stringify(portfolioContext)}`,
         temperature: 0.3,
         maxOutputTokens: 300,
       },
