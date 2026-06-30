@@ -29,7 +29,7 @@ type ChatApiResponse = {
 
 const STARTER: ChatMsg = {
   role: "assistant",
-  text: "Hi! I’m Rhen-Rhen’s portfolio assistant. Ask me about skills, services, or projects.",
+  text: "Hi! I’m Daverick Ivan’s portfolio assistant. How can I help you today?",
 };
 
 function linkify(text: string) {
@@ -226,11 +226,11 @@ export default function ChatWidget() {
             <div className="px-4 py-3 flex items-center justify-between border-b border-black/10 dark:border-white/10">
               <div className="flex items-center gap-3">
                 <span className="inline-flex w-9 h-9 items-center justify-center rounded-xl bg-black/5 dark:bg-white/10 ring-1 ring-black/10 dark:ring-white/10">
-                  <img src="./avatar.png" alt="Rhen" />
+                  <img src="./avatar.png" alt="Daverick Ivan" />
                 </span>
 
                 <div className="leading-tight">
-                  <p className="text-sm font-semibold text-head">Rhen-Rhen</p>
+                  <p className="text-sm font-semibold text-head">Daverick Ivan</p>
                   <p className="text-xs text-muted">
                     Skills • Services • Projects
                   </p>
