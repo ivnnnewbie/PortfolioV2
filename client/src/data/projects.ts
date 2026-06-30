@@ -62,15 +62,15 @@ export const projects: Project[] = [
     description:
       "A user manual layout design that combines clear instructions with a clean and organized structure, enhancing readability and usability.",
     thumbnail: "/projects/Usermanuallayout.png",
-    liveUrl: "https://canva.link/roeg7wzyj31gtoe",
+    liveUrl: "https://canva.link/wmf2f46ul0e9b3e",
   },
   {
     id: 4,
-    title: "UI/UX Design",
+    title: "FaunALert UI/UX Design",
     description:
       "A user interface and user experience design for a modern web application, focusing on usability and visual appeal.",
-    thumbnail: "/projects/design.jpg",
-    liveUrl: "https://canva.link/wmf2f46ul0e9b3e",
+    thumbnail: "/projects/bioguard.png",
+    liveUrl: "https://canva.link/roeg7wzyj31gtoe",
   }
 ];
 
