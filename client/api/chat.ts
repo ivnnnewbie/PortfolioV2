@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { GoogleGenAI } from "@google/genai";
-import { portfolioContext } from "../shared/portfolioContext"; 
+import { portfolioContext } from "../../shared/portfolioContext"; 
 // ⬆ adjust path if needed
 
 const MODEL = "gemini-2.5-flash";
