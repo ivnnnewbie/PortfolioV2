@@ -14,14 +14,14 @@ type Item = {
 };
 
 const items: Item[] = [
-  { src: "/images/DBProject.jpeg", title: "Project", subtitle: "Preview" },
-  { src: "/images/Finguard.jpg", title: "FinTech", subtitle: "Preview" },
-  { src: "/images/tech.jpg", title: "Tech", subtitle: "Preview" },
-  {
-    src: "/images/certificate.png",
-    title: "Operating System Basics",
-    subtitle: "Preview",
-  },
+  { src: "/images/1.jpg", title: "Basic Networking", subtitle: "Preview" },
+  { src: "/images/awarding.jpg", title: "Latin Honor", subtitle: "Preview" },
+  { src: "/images/chedraise.JPG", title: "CHED Raise", subtitle: "Preview" },
+  { src: "/images/Oralpres.jpg", title: "Research Presentation Award", subtitle: "Preview"},
+  { src: "/images/Picture1.jpg", title: "Data Visualization", subtitle: "Preview"},
+  { src: "/images/poster presentatio.jpg", title: "Poster Presentation", subtitle: "Preview"},
+  { src: "/images/ua-intaffairs.jpg", title: "International Affairs Seminar", subtitle: "Preview"},
+  { src: "/images/wvsu.jpg", title: "Forum Participation", subtitle: "Preview"},
 ];
 
 function GalleryCard({ item, index }: { item: Item; index: number }) {
@@ -130,22 +130,24 @@ export default function GalleryCarousel() {
   // Duplicate items for seamless loop
   const loopItems = useMemo(() => [...items, ...items], []);
 
-  useAnimationFrame((_t, delta) => {
-    if (paused.current) return;
+ useAnimationFrame((_t, delta) => {
+  if (paused.current) return;
 
-    const el = trackRef.current;
-    if (!el) return;
+  const el = trackRef.current;
+  if (!el) return;
 
-    const halfWidth = el.scrollWidth / 2;
-    const moveBy = (speed * delta) / 1000;
+  const halfWidth = el.scrollWidth / 2;
+  const moveBy = (speed * delta) / 1000;
 
-    let next = xRaw.get() - moveBy;
+  let next = xRaw.get() - moveBy;
 
-    // Wrap seamlessly (no jump)
-    if (-next >= halfWidth) next = 0;
+  if (-next >= halfWidth) {
+    next = 0;
+    x.jump(0); // Forces the spring instance to snap instantly without rubber-banding backwards
+  }
 
-    xRaw.set(next);
-  });
+  xRaw.set(next);
+});
 
   // Premium edge fade using mask (no harsh black overlays)
   const edgeFadeMask = {

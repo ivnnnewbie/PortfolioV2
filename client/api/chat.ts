@@ -112,8 +112,14 @@ export default async function handler(
       model: MODEL,
       contents,
       config: {
-        // We pass the stringified portfolio structure directly into the system instruction
-        systemInstruction: `You are ${portfolioContext.owner}'s portfolio assistant. Use this data to answer questions accurately: ${JSON.stringify(portfolioContext)}`,
+        // We pass the stringified portfolio structure and append strict formatting constraints
+        systemInstruction: `You are ${portfolioContext.owner}'s portfolio assistant. Use this data to answer questions accurately: ${JSON.stringify(portfolioContext)}. 
+        
+        CRITICAL FORMATTING RULES:
+        - DO NOT use any Markdown formatting under any circumstances.
+        - NEVER use double asterisks (**) or single asterisks (*) to bold, emphasize, or highlight words.
+        - Always return responses as clean, plain, unformatted text only.
+        - If text elements contain commas, list them naturally in a smooth sentence.`,
         temperature: 0.3,
         maxOutputTokens: 300,
       },
