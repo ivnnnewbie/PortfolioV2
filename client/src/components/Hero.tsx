@@ -131,7 +131,7 @@ export default function Hero() {
 
           {/* View Resumé Link (Redirects to Google Docs) */}
           <motion.a
-            href="https://docs.google.com/document/d/1ob0_1IxY3gawp3WYinYhtYkyN4zLKlvUsMUMqdKpsGs/edit?usp=sharing"
+            href="https://drive.google.com/file/d/1kGD3Kc3wDBYvWoLbifNHsj43zJmaSMnG/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             whileHover={{ scale: 1.02 }}

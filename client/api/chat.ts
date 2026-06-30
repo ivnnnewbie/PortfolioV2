@@ -48,6 +48,9 @@ const portfolioContext = {
     Code: ["VS Code", "Android Studio", "HTML", "CSS", "Git", "GitHub", "MySQL", "Vercel"],
     Office: ["Google Docs", "Google Sheets", "Google Sites", "Microsoft Word"],
   },
+  profession: {
+    Jobexperience: "Served as a SK Secretary for 2 ",
+  },
   projects: [
     {
       name: "Mobile Thrift Shop UI",
