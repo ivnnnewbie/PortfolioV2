@@ -22,6 +22,7 @@ const items: Item[] = [
   { src: "/images/poster presentatio.jpg", title: "Poster Presentation", subtitle: "Preview"},
   { src: "/images/ua-intaffairs.jpg", title: "International Affairs Seminar", subtitle: "Preview"},
   { src: "/images/wvsu.jpg", title: "Forum Participation", subtitle: "Preview"},
+  { src: "/images/design.jpg", title: "UI/UX Design", subtitle: "Preview"},
 ];
 
 function GalleryCard({ item, index }: { item: Item; index: number }) {
