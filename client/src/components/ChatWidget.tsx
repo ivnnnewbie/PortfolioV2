@@ -134,9 +134,9 @@ export default function ChatWidget() {
     setLoading(true);
     setMessages((prev) => [...prev, { role: "user", text }]);
 
-   try {
-  // Replace the placeholder with your actual live Vercel link
-  const res = await fetch("https://portfolio-v2-32hxu6ncx-ivnnnewbies-projects.vercel.app/api/chat", {
+  try {
+  // Use a relative path so it perfectly aligns with the live domain deployment
+  const res = await fetch("/api/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message: text, history }),
