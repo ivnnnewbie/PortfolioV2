@@ -13,21 +13,27 @@ const portfolioContext = {
     contactPage: "/contact",
   },
   education: {
-    primaryeducation: {
+    primaryeducation: [
+      {
       name: "Fragante Elementary School",
       awards: "Academic Excellence Awardee for 7 consecutive years",
-    },
-    secondaryeducation: {
-      name: "Pandan National Vocational High School",
-      strand: "Humanities and Social Sciences",
-      awards: "Academic Excellence Awardee for 6 consecutive years",
-    },
-    tertiaryeducation: {
+      }
+    ],
+    secondaryeducation: [
+      {
+        name: "Pandan National Vocational High School",
+        strand: "Humanities and Social Sciences",
+        awards: "Academic Excellence Awardee for 6 consecutive years",
+      }
+    ],
+    tertiaryeducation: [
+      {
       name: "University of Antique - Tario Lim Memorial Campus",
       program: "Bachelor of Science in Information Technology",
       major: "Human-Computer Interaction",
       awards: "Deans Lister for 7 consecutive semesters, Cum Laude",
-    },
+      }
+    ]
   },
   personal: {
     favouritequote: "Que sera, sera. Whatever will be, will be.",
@@ -48,8 +54,32 @@ const portfolioContext = {
     Code: ["VS Code", "Android Studio", "HTML", "CSS", "Git", "GitHub", "MySQL", "Vercel"],
     Office: ["Google Docs", "Google Sheets", "Google Sites", "Microsoft Word"],
   },
-  profession: {
-    Jobexperience: "Served as a SK Secretary for 2 ",
+  experiences: {
+    publicservice: [
+      {
+      role: "Secretary",
+      organization: "Sangguniang Kabataan Barangay Fragante, Pandan, Antique",
+      duration: "2024-2026",
+      description: "As the Secretary of the Sangguniang Kabataan, I am responsible for maintaining accurate records of meetings, preparing agendas, and ensuring effective communication within the organization. I also assist in organizing community events and initiatives that promote youth engagement and development.",
+      },
+    ],
+    Academic: [
+      {
+      role: ["News Writer", "Editor-in-Chief"],
+      organization: "THE iCON (College of Computing and Information Sciences Official Student Publication)",
+      duration: "2023-2026",
+      description: "Started as a News Writer, I contributed articles and reports on various topics related to the College's activities and student life. Later promoted to Editor-in-Chief, I oversee the content submitted by junior staffs, manage the editorial team, and ensure the quality and accuracy of all published materials.",
+      }
+    ],
+    internship: [
+      {
+      role: ["Data Encoder", "Graphic Designer"],
+      organization: "Commission on Higher Education Regional Office VI (CHED RO VI)",
+      unit: "Higher Education Management Information System (HEMIS)",
+      duration: "February 2026 - May 2026",
+      description: "As a Data Encoder, I was responsible for accurately inputting and managing data related to Higher Education Institution Data. Additionally, I contributed to graphic design projects, creating publication and multimedia materials.",
+      }
+    ]
   },
   projects: [
     {
@@ -130,7 +160,7 @@ export default async function handler(
 
     const reply =
       result?.candidates?.[0]?.content?.parts?.map((p: any) => p.text).join("") ??
-      "Sorry, I couldn’t respond.";
+      "Sorry, I didn't get that right. Please Try again.";
 
     return res.status(200).json({ reply });
   } catch (err: any) {

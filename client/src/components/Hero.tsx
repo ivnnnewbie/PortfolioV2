@@ -98,7 +98,7 @@ export default function Hero() {
 
         <p className="flex items-center gap-1 text-sm text-muted">
           <MapPin size={14} className="text-accent" />
-          Pandan, Antique, Philippines
+          Antique, Philippines
         </p>
 
         <p className="text-sm font-medium">UI/UX Designer | Graphic Designer</p>
@@ -131,7 +131,7 @@ export default function Hero() {
 
           {/* View Resumé Link (Redirects to Google Docs) */}
           <motion.a
-            href="https://drive.google.com/file/d/1kGD3Kc3wDBYvWoLbifNHsj43zJmaSMnG/view?usp=sharing"
+            href="https://drive.google.com/file/d/1tL-OfSjk61EZTQHZRa9ic0APtaDyx3WU/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             whileHover={{ scale: 1.02 }}
